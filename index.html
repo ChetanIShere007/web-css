@@ -3,280 +3,449 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>WEB CSS</title>
-  
+  <title>Document</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <style>
-   /* @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200;1,6..12,400;1,6..12,800;1,6..12,1000&family=Roboto+Mono:ital,wght@0,600;0,700;1,600;1,700&display=swap'); */
-   *{
+    * {
       margin: 0;
       padding: 0;
+      box-sizing: border-box;
+    }
+
+    header {
+      background-color: #1E293B;
+      color: white;
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      padding: 10px 15px;
+    }
+
+    a {
+      text-decoration: none;
+      color: white;
+      padding-left: 20px;
+      font-size: 1.1rem;
 
     }
-    .bx{
-      height: 200px;
-      width: 200px;
-      border: 1px solid black;
-      background-color: red;
-      /* margin:10px; */
-      margin: 0 auto;
-     
+
+    .main-display {
+      background-color: #1E293B;
+      color: white;
+      line-height: 2.4rem;
+      display: grid;
+      grid-template-columns: 1.9fr 1fr;
+      padding: 0 15px;
+      padding-top: 20px;
+      height: 250px;
+      
+    }
+
+    .dis-info {
+      justify-self: center;
+      margin-top: 30px;
+    }
+
+    input {
+      outline: none;
+      width: 50%;
+      padding: 3px 5px;
+    }
+
+    button {
+      padding: 3px 5px;
+      outline: none;
+      border: none;
+      cursor: pointer;
+      
+    }
+
+    button:hover {
+      color: rgb(255, 255, 217);
+
+    }
+
+    .dis-img img {
+      border-radius: 5px;
+    }
+
+    img {
+      width: 100%;
+    }
+    .course{
+      margin: 50px 0 25px 0;
+      padding:0 15px ;
+      display: grid;
+      grid-template-columns: repeat(3,1fr);
+
+    }
+    .courses h2{
+      text-align:left;
+      padding: 20px 0 10px 0;
+      line-height:1rem ;
+    }
+    .bot{
+      height:100%;
+      max-width:100%;
+      display: grid;
+      grid-template-columns:repeat(4, 1fr);
+      grid-template-rows: repeat(2,1fr);
+      gap: 10px;
+      padding: 0 15px;
+      align-items: center;
+      position: relative;
+      
     }
     .bx1{
-      height: 200px;
-      width: 200px;
-      border: 1px solid black;
-      background-color: red;
-      /* margin:10px; */
-      margin: 0 auto;
-     
+      border: 1px solid red;
+      height: 100%;
+      width:100%;
+      background-color:#1E293B;
+      border-radius: 10px;
     }
     .bx2{
-      height: 200px;
-      width: 200px;
-      border: 1px solid black;
-      background-color: red;
-      /* margin:10px; */
-      margin:0 auto;
-     
+      border: 1px solid red;
+      height: 100%;
+      width:100%;
+      background-color:#1E293B;
+      border-radius: 10px;
     }
-    /* @font-face {
-      font-family:'Roboto' ;
-      src: url(/assets/fonts/RobotoMono-ThinItalic.ttf);
-    } */
-    /* body{
-      padding:20px;
-    } */
-    /* .bx{
-      font-size: 20px;
+    .bx3{
+      border: 1px solid red;
+      height: 100%;
+      width:100%;
+      background-color:#1E293B;
+      border-radius: 10px;
     }
-    .bx p{
-      font-size: 1em;
+    .bx4{
+      border: 1px solid red;
+      height: 100%;
+      width:100%;
+      background-color:#1E293B;
+      border-radius: 10px;
     }
-    .bx p{
-      font-size: 1rem;
-    } */
-    /* p{
-      padding: 2rem;
-      letter-spacing: 1px;
-      word-spacing: 10px;
-      line-height: 2rem;
-    } */
-    /* .bx p{
-      font-family: 'Roboto';
+    .bx5{
+      border: 1px solid red;
+      height: 100%;
+      width:100%;
+      background-color:#1E293B;
+      border-radius: 10px;
     }
-    h2{
-      font-family: 'Roboto';
-    } */
-    /* body{
-      padding: 20px;
-      font-family: 'Roboto Mono', monospace;
-    } */
-    /* h2 {
-      font-weight:700;
+    .bx6{
+      border: 1px solid red;
+      height: 100%;
+      width:100%;
+      background-color:#1E293B;
+      border-radius: 10px;
     }
-    h3{
-font-weight:600;
-
-    } */
-
-    /* .novel p::before{
-      content: 'YIPEEEE';
-      color: red;
-      font-size: 50px;
+    .bx7{
+      border: 1px solid red;
+      height: 100%;
+      width:100%;
+      background-color:#1E293B;
+      border-radius: 10px;
     }
-    .novel p::after{
-      content: 'YIPEEEE';
-      color: red;
-      font-size: 50px;
+    .bx8{
+      border: 1px solid red;
+      height: 100%;
+      width:100%;
+      background-color:#1E293B;
+      border-radius: 10px;
     }
-    .novel p::selection{
-      background-color: aqua;
-    } */
-    /* .novel p{
-      user-select: none;
-    } */
-    /* .bx p:hover{
-      background-color: black;
-      color: red;
+    .bx1 h4,h5{
+      color: white;
+      line-height:25px;
+      font-size: 15px;
+      float: center
+      ;
+  
     }
-
-    button:hover{
-      cursor: pointer;
-      background-color: red;
-      color: aqua;
-    } */
-    /* body{
-      padding: 20px;
+    .bx1 img{
+      width: 80px;
+    height: 80px;
+    position: relative;
+    border-radius: 50%;
+    margin:5px 10px;
+    float: left;
+   
+  
     }
-    li:first-child{
-      color: salmon;
+    .bx1 p{
+      text-align: left
+    ;
+    padding: 10px;
     }
-    li:last-child{
-      color: red;
+    .bx2 h4,h5{
+      color: white;
+      line-height:25px;
+      font-size: 15px;
+      float: center
+      ;
+  
     }
-    li:nth-child(4){
-      color: aquamarine;
-    } */
-    /* .box>h1{
-      color: darkmagenta;
+    .bx2 img{
+      width: 80px;
+    height: 80px;
+    position: relative;
+    border-radius: 50%;
+    margin:5px 10px;
+    float: left;
+   
+  
     }
-    .box+p{
-      color: rgb(48, 2, 2);
+    .bx2 p{
+      text-align: left
+    ;
+    padding: 10px;
     }
-    .box~p{
-      color:darkgoldenrod ;
-    } */
-    
-    /* #head{
-      color: red;
+    .bx3 h4,h5{
+      color: white;
+      line-height:25px;
+      font-size: 15px;
+      float: center
+      ;
+  
     }
-    .section{
-      color: blue;
+    .bx3 img{
+      width: 80px;
+    height: 80px;
+    position: relative;
+    border-radius: 50%;
+    margin:5px 10px;
+    float: left;
+   
+  
     }
-    .bx1 h1{
-      color: gray;
+    .bx3 p{
+      text-align: left
+    ;
+    padding: 10px;
     }
-  .bx1 p
-  {
-    color:orange;
-  }
-  .bx2 h1, .bx2 p{
-    color: aqua;
-  } */
-  /* img[alt='den']{
-    height: 200px;
-  }
-  img[alt='snow']{
-    height: 200px;
-  }
-  img{
-    display: block;
-  }
-  input:focus{
-    color: red;
-  } */
-  /* input[type='email']:focus{
-    color:aqua;
-    border: 1px solid red;
-    outline:none ;
-  }
-  input[type='UserName']:focus{
-    color:red;
-  }
-input:checked+label{
-  color: magenta;
-}
-input[type='radio']:checked+label{
-  color: magenta;
-}
-input[type='radio']
-{
-   border-radius:50% ;
-   outline: none;
-   box-shadow: 0 0 0 2px gray;
-} */
-
-/* .bx p{
-  text-align: start;
-  text-transform: capitalize;
-  text-decoration: underline 1px red;
-  font-style: italic;
-  font-weight: lighter;
-}
-h3{
-  text-shadow: 4px 4px 2px red;
-} */
+    .bx4 h4,h5{
+      color: white;
+      line-height:25px;
+      font-size: 15px;
+      float: center
+      ;
+  
+    }
+    .bx4 img{
+      width: 80px;
+    height: 80px;
+    position: relative;
+    border-radius: 50%;
+    margin:5px 10px;
+    float: left;
+   
+  
+    }
+    .bx4 p{
+      text-align: left
+    ;
+    padding: 10px;
+    }
+    .bx5 h4,h5{
+      color: white;
+      line-height:25px;
+      font-size: 15px;
+      float: center
+      ;
+  
+    }
+    .bx5 img{
+      width: 80px;
+    height: 80px;
+    position: relative;
+    border-radius: 50%;
+    margin:5px 10px;
+    float: left;
+   
+  
+    }
+    .bx5 p{
+      text-align: left
+    ;
+    padding: 10px;
+    }
+    .bx6 h4,h5{
+      color: white;
+      line-height:25px;
+      font-size: 15px;
+      float: center
+      ;
+  
+    }
+    .bx6 img{
+      width: 80px;
+    height: 80px;
+    position: relative;
+    border-radius: 50%;
+    margin:5px 10px;
+    float: left;
+   
+  
+    }
+    .bx6 p{
+      text-align: left
+    ;
+    padding: 10px;
+    }
+    .bx7 h4,h5{
+      color: white;
+      line-height:25px;
+      font-size: 15px;
+      float: center
+      ;
+  
+    }
+    .bx7 img{
+      width: 80px;
+    height: 80px;
+    position: relative;
+    border-radius: 50%;
+    margin:5px 10px;
+    float: left;
+   
+  
+    }
+    .bx7 p{
+      text-align: left
+    ;
+    padding: 10px;
+    }
+    .bx8 h4,h5{
+      color: white;
+      line-height:25px;
+      font-size: 15px;
+      float: center
+      ;
+  
+    }
+    .bx8 img{
+      width: 80px;
+    height: 80px;
+    position: relative;
+    border-radius: 50%;
+    margin:5px 10px;
+    float: left;
+   
+  
+    }
+    .bx8 p{
+      text-align: left
+    ;
+    padding: 10px;
+    }
   </style>
 
-<!-- <link rel="stylesheet" href="/style.css" type="text/css"> -->
+
 </head>
+
 <body>
+  <header>
+    <h1>Skillz</h1>
+    <nav>
+      <a href="">About</a>
+      <a href="">Contact</a>
+    </nav>
+  </header>
 
-<!-- <p>
-  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut dolorem blanditiis quia sapiente cupiditate iusto velit! Tempore nulla eligendi officia velit dignissimos! Tenetur, eaque quibusdam?
-</p> -->
-  <!-- <h2>chetan</h2>
+  <div class="main-display">
 
-  <h3>yoyyyyyyyyyyyyyyyyyyyyyoyoyoyyo</h3> -->
-<!-- <form action="#">
-  <input type="email" placeholder="Add Email">
-  <br>
-  <input type="UserName" placeholder="Add Name">
-  <p>
-    
-    <input type="radio"
-    name="gender" value="male" id="male">
-    <label for="male">Male</label>
-    
-    <input type="radio"
-    name="gender" value="female" id="female">
-    <label for="female">Female</label>
-  </p>
-  
-</form> -->
+    <div class="dis-info">
+      <h1>Learn any digital skill of your choice today</h1>
+      <h3>Over 30000 students currently learn with us</h3>
+      <form>
+        <input type="text" placeholder="Enter your email address">
+        <button>Start Learning</button>
+      </form>
+      <p>Try out our free courses.No risk, no credit card required</p>
+    </div>
 
-
-
-  <!-- <div>
-  <h1 style="color: blueviolet;">Hello CHets</h1>
-  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat, asperiores reprehenderit numquam impedit suscipit quis omnis ut tempora sed explicabo esse blanditiis quae sequi! Unde accusantium rem quis a eum.</p>
-  </div>
-  <div>
-    <h1>YOYOYOYOYOY</h1>
-  </div> -->
-  <!-- <div id="head">
-    <h1>Lorem ipsum dolor sit amet.</h1>
-  </div>
-  <div class="section">
-    <h1>Lorem ipsum dolor sit amet.</h1>
-  </div> 
-  <div class="bx1">
-    <h1>Hello bx 1</h1>
-    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Suscipit, vero!
-    </p>
-  </div>
-  <div class="bx2">
-    <h1>Hello bx 2</h1>
-    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Suscipit, vero!
-    </p>
-    <h3>hello CHETS</h3>
-  </div> -->
-  <!-- <div class="box">
-    <h1>YOYOYOO</h1>
-    <div class="box1">
-      <h1>bx1</h1>
+    <div class="dis-img">
+      <img
+        src="https://images.unsplash.com/photo-1542744173-8e7e53415bb0?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8Y291cnNlc3xlbnwwfHwwfHx8MA%3D%3D"
+        alt="">
     </div>
   </div>
-  <p>Lorem, ipsum.</p>
-  <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sit, dolor? Tempore, laudantium officiis, vel voluptate dolorum veniam excepturi asperiores cumque beatae expedita rerum. Libero praesentium dolore labore nam tempore optio iste ex atque dolores eaque repellat temporibus voluptate eius, repudiandae accusamus earum, quaerat, necessitatibus quia numquam nesciunt dolorem perspiciatis ullam?</p> -->
-  
-  <!-- <ol>
-    <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quas, molestiae.</li>
-    <li>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eveniet, voluptatibus?</li>
-    <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus, laborum.</li>
-    <li>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugit, atque.</li>
-    <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Labore, delectus.</li>
-  </ol> -->
-  <!-- <div class="bx"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi fugiat quia voluptatem iusto necessitatibus velit illo aliquam laudantium, optio quo.</p></div>
-  <button>Jai SHREE RAM</button> -->
+  <br><br><br><br>
+  <div class="course">
+  <div class="courses">
+    <div>
+    <i class="fa-solid fa-swatchbook fa-2x1"style='font-size:34px'></i></div>
+    <h2>Over 300 available courses</h2>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Unde reprehenderit esse rem porro, ab assumenda ut cum quae repellendus enim, harum atque, placeat magni amet?</p>
 
-  <!-- <div class="novel"><p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatem mollitia sequi rem optio aperiam, distinctio ipsa omnis, accusantium et perspiciatis iusto! Odio, optio. Maxime quam aliquam doloremque quae explicabo, sit modi. Deleniti quidem nostrum temporibus ipsam. Nemo ipsa, vitae rem qui, aperiam, magnam quae laboriosam aliquam debitis totam est? Possimus.</p></div> -->
- <!-- <img src="https://images.unsplash.com/photo-1705368438805-9dcef410ad9d?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwxM3x8fGVufDB8fHx8fA%3D%3D" alt="den">
- <img src="https://images.unsplash.com/photo-1705179910379-22460ba72214?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwyOHx8fGVufDB8fHx8fA%3D%3D" alt="snow"> -->
- <!-- <div class="bx">
-  <p>
-    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fuga culpa pariatur ea, mollitia quidem hic reprehenderit repudiandae tenetur recusandae assumenda, doloremque sunt facilis ut modi quae voluptatum dolores accusamus voluptates voluptas alias eum quas! Perferendis fugit omnis sit maiores ducimus. Modi quisquam impedit debitis asperiores illo molestias? Earum, vero officia.
-  </p> -->
-  <div class="bx">
-    <h1>JAI <br> SHREE <br> RAM</h1>
   </div>
-  <div class="bx1">
-    <h1>JAI <br> SHREE <br> RAM</h1>
+  <div class="courses">
+    <div>
+    <i class="fa-solid fa-swatchbook fa-2x1"style='font-size:36px'></i></div>
+    <h2>Over 300 available courses</h2>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Unde reprehenderit esse rem porro, ab assumenda ut cum quae repellendus enim, harum atque, placeat magni amet?</p>
+
   </div>
-  <div class="bx2">
-    <h1>JAI <br> SHREE <br> RAM</h1>
+  <div class="courses">
+    <div>
+    <i class="fa-solid fa-swatchbook fa-2x1 "style='font-size:36px'></i></div>
+    <h2>Over 300 available courses</h2>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Unde reprehenderit esse rem porro, ab assumenda ut cum quae repellendus enim, harum atque, placeat magni amet?</p>
+  </div>
+</div>
+<br> <br>
+    <div class="bot">
+      <div class="bx1">
+        <img src="https://images.unsplash.com/photo-1705931607440-61189f2380cb?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt=""><br>
+        <h4>Ryan Florence</h4>
+        <h5>Remix & React Training</h5> <br>
+        <p style="color: white;">I feel like an idiot for not using Tailwind CSS until now.</p>
+      </div>
+      <div class="bx2">
+        <img src="https://images.unsplash.com/photo-1705931607440-61189f2380cb?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt=""><br>
+        <h4>Ryan Florence</h4>
+        <h5>Remix & React Training</h5> <br>
+        <p style="color: white;">I feel like an idiot for not using Tailwind CSS until now.</p>
+      </div>
+      <div class="bx3">
+        <img src="https://images.unsplash.com/photo-1705931607440-61189f2380cb?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt=""><br>
+        <h4>Ryan Florence</h4>
+        <h5>Remix & React Training</h5> <br>
+        <p style="color: white;">I feel like an idiot for not using Tailwind CSS until now.</p>
+      </div>
+      <div class="bx4">
+        <img src="https://images.unsplash.com/photo-1705931607440-61189f2380cb?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt=""><br>
+        <h4>Ryan Florence</h4>
+        <h5>Remix & React Training</h5> <br>
+        <p style="color: white;">I feel like an idiot for not using Tailwind CSS until now.</p>
+      </div>
+      <div class="bx5">
+        <img src="https://images.unsplash.com/photo-1705931607440-61189f2380cb?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt=""><br>
+        <h4>Ryan Florence</h4>
+        <h5>Remix & React Training</h5> <br>
+        <p style="color: white;">I feel like an idiot for not using Tailwind CSS until now.</p>
+      </div>
+      <div class="bx6">
+        <img src="https://images.unsplash.com/photo-1705931607440-61189f2380cb?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt=""><br>
+        <h4>Ryan Florence</h4>
+        <h5>Remix & React Training</h5> <br>
+        <p style="color: white;">I feel like an idiot for not using Tailwind CSS until now.</p>
+      </div>
+      <div class="bx7">
+        <img src="https://images.unsplash.com/photo-1705931607440-61189f2380cb?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt=""><br>
+        <h4>Ryan Florence</h4>
+        <h5>Remix & React Training</h5> <br>
+        <p style="color: white;">I feel like an idiot for not using Tailwind CSS until now.</p>
+      </div>
+      <div class="bx8">
+        <img src="https://images.unsplash.com/photo-1705931607440-61189f2380cb?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt=""><br>
+        <h4>Ryan Florence</h4>
+        <h5>Remix & React Training</h5> <br>
+        <p style="color: white;">I feel like an idiot for not using Tailwind CSS until now.</p>
+      </div>
+    
+
+ 
   </div>
   
- </div>
+  
 </body>
 </html>
