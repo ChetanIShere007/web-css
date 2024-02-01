@@ -72,11 +72,22 @@
     img {
       width: 100%;
     }
+    @media(max-width:750px){
+    .main-display{
+      grid-template-columns: 1fr;
+      gap: 15px;
+      height: auto;
+
+    }.dis-img{
+      padding: 0 15px;
+
+    }
+  }
     .course{
       margin: 50px 0 25px 0;
       padding:0 15px ;
       display: grid;
-      grid-template-columns: repeat(3,1fr);
+      grid-template-columns: repeat(auto-fit,min-max(300px,1fr));
 
     }
     .courses h2{
@@ -88,7 +99,7 @@
       height:100%;
       max-width:100%;
       display: grid;
-      grid-template-columns:repeat(4, 1fr);
+      grid-template-columns: repeat(auto-fit,min-max(300px,1fr));
       grid-template-rows: repeat(2,1fr);
       gap: 10px;
       padding: 0 15px;
@@ -342,7 +353,6 @@
 </head>
 
 <body>
-  lkmj
   <header>
     <h1>Skillz</h1>
     <nav>
